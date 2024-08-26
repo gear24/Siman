@@ -1,0 +1,64 @@
+.carousel {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  /* Ajusta esta altura según lo que necesites */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Aplica el efecto cover */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 20rem;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+
+/* estilo pa los controles  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  } 
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  */
