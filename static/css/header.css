@@ -1,0 +1,134 @@
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+  }
+a{
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Ajusta el padding según necesites */
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .navbar-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según lo necesites */
+    margin: 0 auto; /* Centra el contenido dentro del navbar */
+    align-items: center; /* Alinea verticalmente los elementos */
+    position: relative; /* Permite a los elementos internos usar position absolute */
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Centra el texto dentro del espacio */
+    flex: 1; /* Ocupa el espacio disponible */
+    margin-right: 10%;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+    position: absolute; /* Permite colocar los íconos en una posición específica */
+    right: 20px; /* Ajusta la distancia desde el borde derecho del navbar */
+  }
+  
+  .nav-icons .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search{
+    margin-right: auto; /* Empuja el ícono de búsqueda hacia el borde izquierdo */
+    display: flex;
+    align-items: center;
+  }
+  #search span {
+    font-size: 250%; /* Ajusta el tamaño del ícono */
+    color: rgb(255, 5, 5); /* Color del ícono */
+    opacity: 0.7; /* Fondo transparente para el ícono */
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-icons .icon span{
+    font-size: 250%; /* Ajusta el tamaño de los íconos */
+    color: rgb(255, 5, 5); /* Color de los íconos */
+    opacity: 0.7; /* Fondo transparente para los íconos */
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-icons .icon span:hover {
+    opacity: 1; /* Cambia la opacidad en hover si deseas */
+  }
+  
+
+.hero-image {
+    background-image: url('../img/gojo.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    transition: opacity 0.2s ease;  /* cambiale esto para la velo */
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    #navbar {
+      padding: 0 10px; /* Ajusta el padding si es necesario */
+    }
+  
+    .navbar-content {
+      max-width: 100%; /* Asegúrate de que el contenido use todo el ancho disponible */
+      margin: 0; /* Elimina el margen automático para centrar el contenido */
+    }
+  
+    .brand-name {
+      font-size: 20px; /* Ajusta el tamaño del texto si es necesario */
+      margin-right: 12%;
+      
+    }
+  
+    .nav-icons {
+      right: 10px; /* Ajusta la distancia desde el borde derecho si es necesario */
+      gap: 10px; /* Ajusta el espacio entre los íconos si es necesario */
+    }
+  }
+  
