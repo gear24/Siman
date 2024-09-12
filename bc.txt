@@ -23,16 +23,16 @@
     <nav id="navbar">
       <section class="navbar-content">
 
-        <!-- <a href="#" id="search">
+        <a href="#" id="search">
           <span class="material-symbols-outlined">search</span>
-        </a> -->
+        </a>
         <p class="brand-name" id="brand-name"><a href="#">Siman</a></p>
         <section class="nav-icons">
           <a href="#" class="icon">
             <span class="material-symbols-outlined">shopping_cart</span>
           </a>
           <a href="#" class="icon">
-            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined">person</span>
           </a>
         </section>
       </section>
@@ -45,40 +45,22 @@
 
   </header>
 
-  
-
 
   <main>
 
     <section class="carousel">
       <section class="carousel-container">
-        <figure class="carousel-item">          
-          <picture>
-            <source media="(max-width: 600px)" srcset="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/e4e77ed3-7470-4541-b583-b0c1f0c6947b___bb5bf4267e763da5c06227602760b6ae.jpg">
-            <source media="(max-width: 1000px)" srcset="static/img/carrsusel1.webp">
-            <img src="static/img/carrsusel1.webp" alt="Imagen 1">
-          </picture>
+        <figure class="carousel-item">
+          <img src="static/img/carrsusel1.webp" alt="Imagen 1">
         </figure>
         <figure class="carousel-item">
-          <picture>
-            <source media="(max-width: 600px)" srcset="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/fb4a2f2f-77c7-49aa-b2ae-55910e0fbaa6___ee325bdf8fa1087fa7663b0219fb4432.jpg">
-            <source media="(max-width: 1000px)" srcset="static/img/carrsusel2.webp">
-            <img src="static/img/carrsusel2.webp" alt="Imagen 2">
-          </picture>
+          <img src="static/img/carrsusel2.webp" alt="Imagen 2">
         </figure>
         <figure class="carousel-item">
-          <picture>
-            <source media="(max-width: 600px)" srcset="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/65454598-6252-4c84-a874-feddb25538b2___a9f86d7082431ad59ca58ae38c0e9d11.jpg"">
-            <source media="(max-width: 1000px)" srcset="static/img/carrsusel3.webp">
-            <img src="static/img/carrsusel3.webp" alt="Imagen 3">
-          </picture>
+          <img src="static/img/carrsusel3.webp" alt="Imagen 3">
         </figure>
         <figure class="carousel-item">
-          <picture>
-            <source media="(max-width: 600px)" srcset="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/de979c86-71a4-4205-9666-23f1fb1cfb4e___2bbec5b383ed50d3498e25d9d6ae5250.jpg">
-            <source media="(max-width: 1000px)" srcset="static/img/carrsusel4.webp">
-            <img src="static/img/carrsusel4.webp" alt="Imagen 4">
-          </picture>
+          <img src="static/img/carrsusel4.webp" alt="Imagen 4">
         </figure>
       </section>
       <span class="carousel-control prev"></span>
@@ -285,28 +267,36 @@
 
 
     <article class="dashboard">
-      <h1 style="color: aliceblue;">Viajes</h1>
       <section class="dashboard-item large">
         <figure class="figureimg">
           <img src="static/img/viaje.webp" alt="Viaje">
         </figure>
       </section>
-
-      <section class="dynamic-section dashboard-item small">
+      
+      <section id="dynamic-section" class="dashboard-item small">
         <figure class="figureimg">
-          <img src="static/img/viajes_2.png" alt="Viajes">
+          <picture>
+            <source media="(max-width: 600px)" srcset="static/img/viajes_2_small.png">
+            <source media="(max-width: 1000px)" srcset="static/img/viajes_2.png">
+            <img src="static/img/viajes_2.png" alt="Viajes">
+          </picture>
         </figure>
       </section>
+      
+    
     </article>
+    
+
+  </article>
 
 
-  
+
     <!-- Esto hace las tarjetas en modo scroll -->
     <article class="cards-container">
 
       <section class="small-card">
         <figure class="small-card-image-container">
-          <img src="static/img/maleta1.webp" alt="Pocket logo">
+          <img src="static/img/cel1.webp" alt="Pocket logo">
         </figure>
         <article class="small-card-content">
           <h3>Pocket logo</h3>
@@ -316,10 +306,9 @@
           </button>
         </article>
       </section>
-
       <section class="small-card">
         <figure class="small-card-image-container">
-          <img src="static/img/maleta2.webp" alt="Pocket logo">
+          <img src="static/img/cel1.webp" alt="Pocket logo">
         </figure>
         <article class="small-card-content">
           <h3>Pocket logo</h3>
@@ -329,37 +318,9 @@
           </button>
         </article>
       </section>
-
-      <section class="small-card">
+            <section class="small-card">
         <figure class="small-card-image-container">
-          <img src="static/img/maleta3.webp" alt="Pocket logo">
-        </figure>
-        <article class="small-card-content">
-          <h3>Pocket logo</h3>
-          <p>$499.99</p>
-          <button class="small-card-add-to-cart">
-            <span class="material-symbols-outlined">add</span>
-          </button>
-        </article>
-      </section>
-
-      <section class="small-card">
-
-        <figure class="small-card-image-container">
-          <img src="static/img/maleta4.webp" alt="Pocket logo">
-        </figure>
-        <article class="small-card-content">
-          <h3>Pocket logo</h3>
-          <p>$499.99</p>
-          <button class="small-card-add-to-cart">
-            <span class="material-symbols-outlined">add</span>
-          </button>
-        </article>
-      </section>
-
-      <section class="small-card">
-        <figure class="small-card-image-container">
-          <img src="static/img/maleta5.webp" alt="Pocket logo">
+          <img src="static/img/cel1.webp" alt="Pocket logo">
         </figure>
         <article class="small-card-content">
           <h3>Pocket logo</h3>
@@ -372,122 +333,6 @@
 
     </article>
 
-    <br>
-    <article class="dashboard">
-
-
-      <section class="dynamic-section dashboard-item small">
-        <figure class="figureimg">
-          <img src="static/img/relleno1.webp" alt="Viajes">
-        </figure>
-      </section>
-      <section class="dynamic-section dashboard-item small">
-        <figure class="figureimg">
-          <img src="static/img/relleno2.jpg" alt="Viajes">
-        </figure>
-      </section>
-      <br>
-      <section class="dashboard-item large">
-        <figure class="figureimg">
-          <img src="static/img/papas.webp" alt="Viajes">
-        </figure>
-      </section>
-      <section class="dashboard-item medium">
-        <h2 style="color: aliceblue;">Lo mejor en tecnología | Smart Home</h2>  <br>
-        <h4><p>Productos de la mas alta calidad, linea blanca, electrodomesticos y mas, solo aca.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, est? Dolorem repellat laudantium nobis nisi facilis quam enim amet iusto! Impedit delectus nihil magni consequatur, dolore corrupti sit maxime in?
-          nisi facilis quam enim amet iusto! Impedit delectus nihil magni consequatur, dolore corrupti sit maxime in?
-          nisi facilis quam enim amet iusto! Impedit delectus nihil magni consequatur, dolore corrupti sit maxime in?
-          
-        </p> <br>
-        <a href="#">Ver mas</a></h>      
-      </section>
-      <section class="dashboard-item large">
-      <article class="cards-container">
-
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/EchoDot.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section>
-
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/bascula.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section>
-
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/ventilador.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section>
-
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/licuadora.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section>
-  
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/lavasecadora.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section>
-  
-        <section class="small-card">
-          <figure class="small-card-image-container">
-            <img src="static/img/aire.webp" alt="Pocket logo">
-          </figure>
-          <article class="small-card-content">
-            <h3>Pocket logo</h3>
-            <p>$499.99</p>
-            <button class="small-card-add-to-cart">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </article>
-        </section> 
-  
-      </article>
-    </section>
-
-      
-    </article>
 
 
   </main>

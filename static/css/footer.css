@@ -1,0 +1,69 @@
+.footer {
+    background-color: #282828; /* Gris oscuro para el fondo */
+    color: #d1d1d1; /* Gris claro para el texto */
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    border-top: 2px solid #4a4a4a; /* Delgada línea superior en un gris más oscuro */
+  }
+  
+  .footer__about,
+  .footer__links,
+  .footer__contact {
+    margin: 0;
+  }
+  
+  .footer__about h2,
+  .footer__links h2,
+  .footer__contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Gris muy claro para los títulos */
+  }
+  
+  .footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__links li {
+    margin: 10px 0;
+  }
+  
+  .footer__links a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: color 0.3s;
+  }
+  
+  .footer__links a:hover {
+    color: #f0f0f0;
+  }
+  
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #444;
+    color: #d1d1d1;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #666;
+  }
+  

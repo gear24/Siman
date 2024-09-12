@@ -32,3 +32,41 @@ nextButton.addEventListener('click', showNextImage);
 
 // Auto-slide every 3 seconds
 setInterval(showNextImage, 3000);
+
+
+
+
+//Tarjetas cambiantes
+function updateClass() {
+  const dynamicSections = document.querySelectorAll('.dynamic-section'); 
+
+  dynamicSections.forEach(section => {
+    // Solo modifica elementos que tienen la clase 'small'
+    if (section.classList.contains('small')) {
+      if (window.innerWidth <= 600) {
+        // Pantallas pequeñas (600px o menos)
+        section.classList.remove('small');
+        section.classList.add('medium');
+      } else {
+        // Pantallas grandes (más de 600px)
+        section.classList.remove('medium');
+        section.classList.add('small');
+      }
+    }
+  });
+}
+
+// Llama a la función al cargar la página
+window.addEventListener('load', updateClass);
+
+// Llama a la función cada vez que la ventana cambia de tamaño
+window.addEventListener('resize', updateClass);
+
+
+// Seleccionar el ícono de la hamburguesa y el menú de enlaces
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});

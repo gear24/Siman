@@ -1,11 +1,13 @@
 body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     background-color: #1f1f1f;
     margin: 0;
     padding: 0;
   }
-a{
-    text-decoration: none;
+
+a {
+    all: unset; 
+    cursor: pointer;
 }
 
 header {
@@ -19,13 +21,14 @@ header {
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: white;
+    background-color: #7199fd;
     display: flex;
     align-items: center;
     padding: 0 20px; /* Ajusta el padding según necesites */
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.5s ease;
+    
   }
   
   .navbar-content {
@@ -44,6 +47,7 @@ header {
     text-align: center; /* Centra el texto dentro del espacio */
     flex: 1; /* Ocupa el espacio disponible */
     margin-right: 10%;
+    font-family: "Pacifico", cursive;
   }
   
   .nav-icons {
@@ -62,19 +66,21 @@ header {
     margin-right: auto; /* Empuja el ícono de búsqueda hacia el borde izquierdo */
     display: flex;
     align-items: center;
+    color: black;
   }
   #search span {
     font-size: 250%; /* Ajusta el tamaño del ícono */
-    color: rgb(255, 5, 5); /* Color del ícono */
+    /*color: rgb(255, 5, 5);  Color del ícono */
+    
     opacity: 0.7; /* Fondo transparente para el ícono */
     transition: opacity 0.3s ease;
   }
 
   .nav-icons .icon span{
     font-size: 250%; /* Ajusta el tamaño de los íconos */
-    color: rgb(255, 5, 5); /* Color de los íconos */
     opacity: 0.7; /* Fondo transparente para los íconos */
     transition: opacity 0.3s ease;
+    color: black;
   }
   
   .nav-icons .icon span:hover {
@@ -83,7 +89,7 @@ header {
   
 
 .hero-image {
-    background-image: url('../img/gojo.jpg');
+    background-image: url('../img/placeholder.webp');
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -93,11 +99,14 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 48px;
-    color: white;
+    font-size: 15rem;
+    color: #2c51ca;
     text-transform: uppercase;
     margin: 0;
     transition: opacity 0.2s ease;  /* cambiale esto para la velo */
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 main {
@@ -123,6 +132,7 @@ main {
     .brand-name {
       font-size: 20px; /* Ajusta el tamaño del texto si es necesario */
       margin-right: 12%;
+      
       
     }
   
