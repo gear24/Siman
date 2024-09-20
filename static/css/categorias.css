@@ -256,9 +256,12 @@
 
   /* Ajustes en las tarjetas pequeñas */
   .small-cardC {
-    flex: 0 0 150px; /* Ajustar el ancho de la tarjeta */
-    margin: 10px; /* Reducir margen para ahorrar espacio */
-    width: 100%; /* Que ocupen el 100% del espacio en su columna */
+    flex: 0 0 150px;
+    margin: 10px; 
+    width: 100%; 
+  }
+  .hero-text h1 {
+    font-size: 8rem;    
   }
 }
 
