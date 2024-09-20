@@ -63,10 +63,5 @@ window.addEventListener('load', updateClass);
 window.addEventListener('resize', updateClass);
 
 
-// Seleccionar el ícono de la hamburguesa y el menú de enlaces
-const hamburger = document.querySelector('.hamburger');
-const navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-});
+

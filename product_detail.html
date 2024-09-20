@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="static/css/general.css">
+    <link rel="stylesheet" href="static/css/product_detail.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+
+
+
+    <title>Siman</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <nav id="navbar">
+            <section class="navbar-content">
+                <!-- Menú de 3x3 puntitos -->
+                <div id="toggleMenu" class="menu-icon">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <p class="brand-name" id="brand-name">
+                    <a href="#">
+                        Siman
+                        <span class="material-symbols-outlined" style="rotate: 45deg;">stop</span>
+                    </a>
+                </p>
+                <section class="nav-icons original-icons">
+                    <a href="#" class="icon">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <span class="material-symbols-outlined">search</span>
+                    </a>
+                </section>
+                <section class="nav-icons new-icons">
+                    <a href="#" class="icon">Cuenta <i class="bi bi-person"></i></a>
+                    <a href="#" class="icon">Contactanos <i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="icon">Categorias <i class="bi bi-tag"></i></a>
+                </section>
+            </section>
+        </nav>
+        <section class="hero-image" style="background-image: url('./static/img/placeholder.webp')"> <!---->
+
+        </section>
+    </header>
+
+    <!--Cuerpo-->
+   <main>
+    <article class="dashboard">
+        <section class="dashboard-item large">
+            <!-- Banner de imagen del producto -->
+            <figure class="figureimg">
+                <img src="static/img/maleta1.webp" alt="Nombre del Producto">
+            </figure>
+            <!-- Información del producto -->
+            <section class="product-info-container">
+                <article class="product-info">
+                    <h1 class="product-name">Nombre del Producto</h1>
+                    <p class="product-price">$999.99</p>
+                    <button class="add-to-cart-btn">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        Agregar al carrito
+                    </button>
+                </article>
+            </section>
+        </section>
+
+        <!-- Sección de detalles y dropdowns -->
+        <section class="dashboard-item small" style="justify-content: center; ">
+            <!-- Columna de dropdowns -->
+            <section class="dropdowns-column">
+
+                <details class="dropdown">
+                    <summary class="dropdown-btn">Metodos de pago</summary>
+                    <article class="dropdown-content">
+                        <h3>Favor verifica los metodos disponibles en tu pais</h3>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid #ddd; padding: 8px;">Servicio de envío</th>
+                                    <th style="border: 1px solid #ddd; padding: 8px;">Tarifa / Plazo de entrega</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">Exprés</td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">
+                                        Gratuito<br>
+                                        Países europeos: de 1 a 2 días hábiles<br>
+                                        EAU: de 2 a 3 días hábiles.<br>
+                                        Kuwait, Qatar, Arabia Saudí y zonas remotas*: de 3 a 4 días hábiles.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">Entrega en sábado</td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">
+                                        20 EUR<br>
+                                        Para pedidos realizados antes de las 14:00 (CET) del viernes, disponible solo para códigos postales seleccionados.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">Collect In-Store</td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;">
+                                        Gratuito<br>
+                                        Entrega en 1-2 días hábiles.<br>
+                                        Periodo de recogida en tienda: 14 días.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </article>
+                </details>
+
+                <details class="dropdown">
+                    <summary class="dropdown-btn">Medidas</summary>
+                    <article class="dropdown-content">
+                        <h3>Las medidas listadas estan para Asia,Europa y America</h3>
+                        <p><ul style="list-style-type: none; padding-left: 0;">
+                            <li>◆ <strong>Talla S (Small):</strong>
+                                <ul>
+                                    <li>Pecho: 86-91 cm</li>
+                                    <li>Cintura: 66-71 cm</li>
+                                    <li>Caderas: 91-96 cm</li>
+                                </ul>
+                            </li>
+                            <li>◆ <strong>Talla M (Medium):</strong>
+                                <ul>
+                                    <li>Pecho: 91-96 cm</li>
+                                    <li>Cintura: 71-76 cm</li>
+                                    <li>Caderas: 96-101 cm</li>
+                                </ul>
+                            </li>
+                            <li>◆ <strong>Talla L (Large):</strong>
+                                <ul>
+                                    <li>Pecho: 96-101 cm</li>
+                                    <li>Cintura: 76-81 cm</li>
+                                    <li>Caderas: 101-106 cm</li>
+                                </ul>
+                            </li>
+                            <li>◆ <strong>Talla XL (Extra Large):</strong>
+                                <ul>
+                                    <li>Pecho: 101-106 cm</li>
+                                    <li>Cintura: 81-86 cm</li>
+                                    <li>Caderas: 106-111 cm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </p>
+                    </article>
+                </details>
+
+                <details class="dropdown">
+                    <summary class="dropdown-btn">Caracteristicas del producto</summary>
+                    <article class="dropdown-content">
+                        <h3>Limitados a existencias</h3>
+                        <p>Material: 100% algodón</p>
+                        <p>Color: Azul, Rojo, Verde</p>
+                        <p>Tamaño: S, M, L, XL</p>
+                    </article>
+                </details>
+                
+
+            </section>
+        </section>
+
+        <section class="dashboard-item small">
+            <div class="product-image">
+                <img src="static/img/maleta1.webp" alt="Detalles del Producto">
+            </div>
+            <section>
+                <h3>Detalles del Producto</h3>
+                <p>Este es un producto de alta calidad diseñado con materiales premium para una experiencia de lujo. Estilo 804171 XDC4Y 1043.</p>
+            </section>
+        </section>
+        
+        
+        
+    </article>
+   </main>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="footer__about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo apasionado por el diseño y la tecnología. Nos dedicamos a crear experiencias web únicas y
+                elegantes.</p>
+        </section>
+        <section class="footer__links">
+            <h2>Enlaces Útiles</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Privacidad</a></li>
+            </ul>
+        </section>
+        <section class="footer__contact">
+            <h2>Contacto</h2>
+            <p>Email: contacto@ejemplo.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </section>
+        <article class="footer__social">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        </article>
+    </footer>
+
+
+
+    
+    <script src="static/js/header.js"></script>
+    <script src="static/js/product_detail.js"></script>
+</body>
+
+</html>
